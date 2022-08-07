@@ -1,5 +1,5 @@
 {
-  "name": "feeback",
+  "name": "leader",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://127.0.0.1:5000/",
@@ -15,6 +15,7 @@
     "concurrently": "^7.3.0",
     "i18next": "^21.8.14",
     "json-server": "^0.17.0",
+    "moment": "^2.29.4",
     "react": "^17.0.2",
     "react-bootstrap": "^2.4.0",
     "react-dom": "^17.0.2",

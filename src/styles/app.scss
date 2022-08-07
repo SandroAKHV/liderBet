@@ -1,35 +1,27 @@
 @import './variables';
 
-html,
-body,
-#root {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-
-    @include xl {
-        font-size: 15px;
-    }
-
-    @include lg {
-        font-size: 13px;
-    }
-}
-
-
 * {
     box-sizing: border-box;
     margin: 0;
     font-family: sans-serif;
 }
 
+html,
+body,
+#root {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    @include lg {
+        font-size: 13px;
+    }
+}
+
 ul {
     list-style-type: none;
 }
-
-
-
-
 
 .top-bar {
     width: 100%;
@@ -40,8 +32,6 @@ ul {
     .langauge-wrap {
         width: 100%;
         max-width: 1580px;
-        // display: flex;
-        // justify-content: flex-end;
         line-height: 65px;
         margin: 0 auto;
     }
@@ -50,16 +40,16 @@ ul {
 .container {
     width: 100%;
     height: 100%;
-    margin: auto;
-    display: flex;
     padding-top: 1rem;
     max-width: 1600px;
+    margin: auto;
+    justify-content: center;
+    display: flex;
     position: relative;
     flex-direction: row;
-    justify-content: center;
     align-items: flex-start;
+
+    @include md {
+        padding-top: 0;
+    }
 }
-
-
-
-/// nav

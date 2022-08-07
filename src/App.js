@@ -1,11 +1,11 @@
 import Layout from './core/Layout'
-import { FeedbackProvider } from './context/FeedContext'
+import { FeedProvider } from './context/FeedContext'
 import LanguageSwitcher from './shared/LanguageSwitcher'
 import "./styles/app.scss"
 function App() {
 
   return (
-    <FeedbackProvider>
+    <FeedProvider>
       <div className='top-bar'>
         <div className='langauge-wrap'>
           <LanguageSwitcher />
@@ -14,7 +14,7 @@ function App() {
       <div className='container'>
         <Layout />
       </div>
-    </FeedbackProvider>
+    </FeedProvider>
   )
 }
 

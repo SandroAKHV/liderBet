@@ -1,5 +1,7 @@
 .dropdown {
     max-width: 46px;
+    padding-top: 10px;
+    position: relative;
 }
 
 .dropdown-menu {
@@ -7,6 +9,28 @@
     width: 46px;
     text-align: center;
 
+
+}
+
+.logo {
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ru {
+    background-image: url('../assets/images/ru.png');
+}
+
+.ge {
+    background-image: url('../assets/images/ge.png');
+}
+
+.en {
+    background-image: url('../assets/images/en.png');
 }
 
 .dropdown-menu.show {
@@ -37,17 +61,14 @@
     padding: 5px 0;
     opacity: .7;
     line-height: 30px;
+    height: 37px;
+
+    // &:nth-child(1) {
+    //     display: none;
+    // }
 
     &:hover {
         opacity: 1;
         transition: 0.3s;
     }
-}
-
-
-
-.logo {
-    display: block;
-    width: 10px;
-    height: 10px;
 }

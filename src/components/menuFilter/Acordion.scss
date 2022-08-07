@@ -1,0 +1,119 @@
+.acordion-container {
+    background-color: #ffffff;
+    box-shadow: 0 3px 6px rgb(46 81 164 / 16%);
+}
+
+.menu-section-nav {
+    height: auto;
+
+    li {
+        align-items: center;
+        text-transform: uppercase;
+        display: flex;
+        cursor: pointer;
+        margin: 0 0.5rem 0 1rem;
+        font-weight: 600;
+    }
+
+    .switcher-item {
+        margin-left: 50px;
+
+        p {
+            font-weight: 600;
+
+        }
+    }
+
+    .nav-item {
+        cursor: pointer;
+        height: 29px;
+        color: #414141;
+        font-size: 0.9rem;
+        padding: 0.5rem 0 0.5rem 3rem;
+
+        &.active {
+            .check-icon {
+                border: 2px solid #005473;
+
+                &::after {
+                    transform: translate(-50%, -50%) scale(1);
+                    opacity: 1;
+
+                }
+            }
+        }
+    }
+
+}
+
+.acordion-name {
+    width: 100%;
+    display: block;
+    padding: 1rem;
+    font-size: 1rem;
+    position: sticky;
+    font-weight: bold;
+}
+
+
+.MuiPaper-root {
+    border: none !important;
+
+    [aria-expanded="true"] {
+        background: #f3f2f2 !important;
+        border-left: 0.4rem solid #005473;
+    }
+
+
+
+}
+
+.empty-dropdown {
+
+    svg {
+        display: none;
+    }
+
+}
+
+.MuiAccordionSummary-root {
+
+    div {
+        margin: 0;
+    }
+
+    svg {
+        width: 1.5em;
+        height: 1.5em;
+    }
+}
+
+#panel1d-header {
+    margin: 0;
+    padding: 0.5rem;
+    min-height: 38.5px;
+    border-top: 1px solid #f8f8f8;
+    background: white;
+    max-height: 30px;
+    padding-right: 0;
+    padding-left: 0;
+
+    &:hover {
+        border-left: 0.4rem solid #005473;
+        transition: border-width 0.2s linear;
+    }
+}
+
+
+
+
+
+.MuiAccordionSummary-content {
+    order: 2;
+}
+
+.MuiAccordionSummary-expandIconWrapper {
+    order: 1;
+    position: absolute;
+    right: 10px;
+}
