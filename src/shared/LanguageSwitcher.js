@@ -58,6 +58,7 @@ export default function LanguageSwitcher() {
         )
     useEffect(() => {
         setLanguagesData({ "en": { "id": "en", "name": "English" }, "ru": { "id": "ru", "name": "Russian" }, "ge": { "id": "ge", "name": "Georgian" } });
+        localStorage.setItem('current_language', "en");
 
     }, []);
     const handleItemSelect = item => {

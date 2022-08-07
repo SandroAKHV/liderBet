@@ -108,17 +108,6 @@ function Layout({ item }) {
             })
             return result
         })
-        // card.filter(function (item1) {
-        //     return products.some(function (item2) {
-        //         return item1.productId === item2.id;
-        //     });
-        // }).map(function (element) {
-        //     let result = Object.assign(element, {
-        //         ...mapProduct.get(element.id),
-        //         productId: mapProduct.get(element.productId),
-        //     })
-        //     return result
-        // });
 
         const mapSale = new Map(discounts.map(el => [el.id, el]))
 
@@ -131,20 +120,6 @@ function Layout({ item }) {
             })
             return result
         })
-
-
-        // card.filter(function (item1) {
-        //     return discounts.some(function (item2) {
-        //         return item1.discountId == item2.id;
-        //     });
-        // }).map(function (element) {
-        //     let res = Object.assign(element, {
-        //         ...mapSale.get(element.id),
-        //         discountId: mapSale.get(element.discountId),
-        //     })
-        //     return res
-        // });
-
 
         let res = card.sort((a, b) => (a.price < b.price) ? 1 : -1)
         setFeed(res.filter(item => {
